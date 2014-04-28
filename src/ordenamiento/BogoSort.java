@@ -12,19 +12,21 @@ import java.util.Random;
  */
 public class BogoSort {
     
-public  void bogoSort(int array []) {
+public  int[] bogoSort(int array []) {
 	
  
 	while (! isSorted(array))
 		array = randomArray(array);
  
-	for (int i = 0; i < array.length; i++) {
+  for (int i = 0; i < array.length; i++) {
+            
 		System.out.print(array[i] + " ");
+               
 	}
- 
+  return array;
 }
  
-private static boolean isSorted(int [] array)
+public boolean isSorted(int [] array)
 {
     for (int i = 0; i < (array.length - 1); ++i) {
     	if (array[i] > array[i+1])
@@ -34,7 +36,7 @@ private static boolean isSorted(int [] array)
     return true;
 }
  
-private static int [] randomArray(int [] array) {
+public int [] randomArray(int [] array) {
  
     int size = array.length;
     int[] indices = new int[size]; 
@@ -68,14 +70,4 @@ private static int [] randomArray(int [] array) {
     return result;
 }
  
-private static int[] randomIntArray(int length, int n)
-{
-  int[] a = new int[length];
-  Random generator = new Random();
-  for (int i = 0; i < a.length; i++)
-  {
-      a[i] = generator.nextInt(n);
-  }
-  return a;
-}
 }

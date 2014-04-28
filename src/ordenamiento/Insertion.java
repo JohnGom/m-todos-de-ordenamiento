@@ -11,7 +11,7 @@ package ordenamiento;
 public class Insertion {
    
     
-    public void InsertionSort (int a[]) { 
+    public int[] InsertionSort (int a[]) { 
   int i, k, temp; 
   for (k = 1; k < a.length; k ++){
    temp = a [k]; 
@@ -23,7 +23,8 @@ public class Insertion {
    a [i] = temp; 
    
    
-  } 
+  }
+  return a;
 } 
     
 }

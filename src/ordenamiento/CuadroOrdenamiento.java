@@ -354,29 +354,19 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
 
         
         try{
-            
-        int num1 = Integer.parseInt(txtN1.getText());
-        int num2 = Integer.parseInt(txtN2.getText());
-        int num3 = Integer.parseInt(txtN3.getText());
-        int num4 = Integer.parseInt(txtN4.getText());
-        int num5 = Integer.parseInt(txtN5.getText());   
-        int num6 = Integer.parseInt(txtN6.getText()); 
-        int num7 = Integer.parseInt(txtN7.getText()); 
-        int num8 = Integer.parseInt(txtN8.getText()); 
-        int num9 = Integer.parseInt(txtN9.getText());
-        int num10 = Integer.parseInt(txtN10.getText()); 
+              int [] num = new int[10];
+        num[0] = Integer.parseInt(txtN1.getText());
+        num[1] = Integer.parseInt(txtN2.getText());
+        num[2] = Integer.parseInt(txtN3.getText());
+        num[3] = Integer.parseInt(txtN4.getText());
+        num[4] = Integer.parseInt(txtN5.getText());   
+        num[5] = Integer.parseInt(txtN6.getText()); 
+        num[6] = Integer.parseInt(txtN7.getText()); 
+        num[7] = Integer.parseInt(txtN8.getText()); 
+        num[8] = Integer.parseInt(txtN9.getText());
+        num[9] = Integer.parseInt(txtN10.getText()); 
         
-        int [] num = new int[10];
-        num[0]=num1;
-        num[1]=num2;
-        num[2]=num3;
-        num[3]=num4;
-        num[4]=num5;
-        num[5]=num6;
-        num[6]=num7;
-        num[7]=num8;
-        num[8]=num9;
-        num[9]=num10;
+
         
       Insertion n = new Insertion();
       n.InsertionSort(num);
@@ -405,8 +395,6 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
             txtN9.setText("");
             txtN10.setText("");
             
-            
-        txtM1.setText("");
 
             }     
         
@@ -418,28 +406,17 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
  try{
             
-        int num1 = Integer.parseInt(txtN1.getText());
-        int num2 = Integer.parseInt(txtN2.getText());
-        int num3 = Integer.parseInt(txtN3.getText());
-        int num4 = Integer.parseInt(txtN4.getText());
-        int num5 = Integer.parseInt(txtN5.getText());   
-        int num6 = Integer.parseInt(txtN6.getText()); 
-        int num7 = Integer.parseInt(txtN7.getText()); 
-        int num8 = Integer.parseInt(txtN8.getText()); 
-        int num9 = Integer.parseInt(txtN9.getText());
-        int num10 = Integer.parseInt(txtN10.getText()); 
-        
-        int [] num = new int[10];
-        num[0]=num1;
-        num[1]=num2;
-        num[2]=num3;
-        num[3]=num4;
-        num[4]=num5;
-        num[5]=num6;
-        num[6]=num7;
-        num[7]=num8;
-        num[8]=num9;
-        num[9]=num10;
+             int [] num = new int[10];
+        num[0] = Integer.parseInt(txtN1.getText());
+        num[1] = Integer.parseInt(txtN2.getText());
+        num[2] = Integer.parseInt(txtN3.getText());
+        num[3] = Integer.parseInt(txtN4.getText());
+        num[4] = Integer.parseInt(txtN5.getText());   
+        num[5] = Integer.parseInt(txtN6.getText()); 
+        num[6] = Integer.parseInt(txtN7.getText()); 
+        num[7] = Integer.parseInt(txtN8.getText()); 
+        num[8] = Integer.parseInt(txtN9.getText());
+        num[9] = Integer.parseInt(txtN10.getText()); 
         
     Selection j = new Selection();
     j.selectionSort(num);
@@ -502,29 +479,17 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
         try{
-            
-        int num1 = Integer.parseInt(txtN1.getText());
-        int num2 = Integer.parseInt(txtN2.getText());
-        int num3 = Integer.parseInt(txtN3.getText());
-        int num4 = Integer.parseInt(txtN4.getText());
-        int num5 = Integer.parseInt(txtN5.getText());   
-        int num6 = Integer.parseInt(txtN6.getText()); 
-        int num7 = Integer.parseInt(txtN7.getText()); 
-        int num8 = Integer.parseInt(txtN8.getText()); 
-        int num9 = Integer.parseInt(txtN9.getText());
-        int num10 = Integer.parseInt(txtN10.getText()); 
-        
-        int [] num = new int[10];
-        num[0]=num1;
-        num[1]=num2;
-        num[2]=num3;
-        num[3]=num4;
-        num[4]=num5;
-        num[5]=num6;
-        num[6]=num7;
-        num[7]=num8;
-        num[8]=num9;
-        num[9]=num10;
+                int [] num = new int[10];
+        num[0] = Integer.parseInt(txtN1.getText());
+        num[1] = Integer.parseInt(txtN2.getText());
+        num[2] = Integer.parseInt(txtN3.getText());
+        num[3] = Integer.parseInt(txtN4.getText());
+        num[4] = Integer.parseInt(txtN5.getText());   
+        num[5] = Integer.parseInt(txtN6.getText()); 
+        num[6] = Integer.parseInt(txtN7.getText()); 
+        num[7] = Integer.parseInt(txtN8.getText()); 
+        num[8] = Integer.parseInt(txtN9.getText());
+        num[9] = Integer.parseInt(txtN10.getText()); 
         
     BogoSort h = new BogoSort();
     h.bogoSort(num);

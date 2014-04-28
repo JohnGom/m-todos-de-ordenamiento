@@ -10,7 +10,7 @@ package ordenamiento;
  */
 public class Selection {
     
-    public void selectionSort(int arr[]){
+    public int [] selectionSort(int arr[]){
   int i,j,min,temp;
   for(j=0; j < arr.length-1; j++){
    min=j;
@@ -22,5 +22,6 @@ public class Selection {
     arr[min]=temp;
    }
   }
+  return arr;
 } 
 }
