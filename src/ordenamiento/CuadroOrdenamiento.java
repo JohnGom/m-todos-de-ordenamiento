@@ -168,6 +168,11 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
         });
 
         jButton3.setText("Bogosort");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("New");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -373,16 +378,8 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
         num[8]=num9;
         num[9]=num10;
         
-        int i,k,temp;
-  for(k=1; k < num.length; k++){
-   temp=num[k];
-   i=k;
-   while(i > 0 && temp < num[i-1]){
-    num[i]=num[i-1];
-    i--;
-   }
-   num[i]=temp;
-  }
+      Insertion n = new Insertion();
+      n.InsertionSort(num);
         
         txtM1.setText(String.valueOf(num[0]));
         txtM2.setText(String.valueOf(num[1]));
@@ -444,17 +441,8 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
         num[8]=num9;
         num[9]=num10;
         
-   int i,j,min,temp;
-  for(j=0; j < num.length-1; j++){
-   min=j;
-   for(i=j+1; i < num.length; i++)
-    if(num[i] < num[min]) min=i;
-   if(j!=min){
-    temp=num[j];
-    num[j]=num[min];
-    num[min]=temp;
-   }
-  }
+    Selection j = new Selection();
+    j.selectionSort(num);
         
         txtM1.setText(String.valueOf(num[0]));
         txtM2.setText(String.valueOf(num[1]));
@@ -496,8 +484,80 @@ public class CuadroOrdenamiento extends javax.swing.JFrame {
             txtN7.setText("");
             txtN8.setText("");
             txtN9.setText("");
-            txtN10.setText("");// TODO add your handling code here:
+            txtN10.setText("");
+            
+            txtM1.setText("");
+            txtM2.setText("");
+            txtM3.setText("");
+            txtM4.setText("");
+            txtM5.setText("");
+            txtM6.setText("");
+            txtM7.setText("");
+            txtM8.setText("");
+            txtM9.setText("");
+            txtM10.setText("");
+            // TODO add your htxtM1.setText("");andling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+        try{
+            
+        int num1 = Integer.parseInt(txtN1.getText());
+        int num2 = Integer.parseInt(txtN2.getText());
+        int num3 = Integer.parseInt(txtN3.getText());
+        int num4 = Integer.parseInt(txtN4.getText());
+        int num5 = Integer.parseInt(txtN5.getText());   
+        int num6 = Integer.parseInt(txtN6.getText()); 
+        int num7 = Integer.parseInt(txtN7.getText()); 
+        int num8 = Integer.parseInt(txtN8.getText()); 
+        int num9 = Integer.parseInt(txtN9.getText());
+        int num10 = Integer.parseInt(txtN10.getText()); 
+        
+        int [] num = new int[10];
+        num[0]=num1;
+        num[1]=num2;
+        num[2]=num3;
+        num[3]=num4;
+        num[4]=num5;
+        num[5]=num6;
+        num[6]=num7;
+        num[7]=num8;
+        num[8]=num9;
+        num[9]=num10;
+        
+    BogoSort h = new BogoSort();
+    h.bogoSort(num);
+        
+        txtM1.setText(String.valueOf(num[0]));
+        txtM2.setText(String.valueOf(num[1]));
+        txtM3.setText(String.valueOf(num[2]));
+        txtM4.setText(String.valueOf(num[3]));
+        txtM5.setText(String.valueOf(num[4]));
+        txtM6.setText(String.valueOf(num[5]));
+        txtM7.setText(String.valueOf(num[6]));
+        txtM8.setText(String.valueOf(num[7]));
+        txtM9.setText(String.valueOf(num[8]));
+        txtM10.setText(String.valueOf(num[9]));
+            
+         }catch(NumberFormatException j){
+            JOptionPane.showMessageDialog(null,"error, debes insertar numeros");
+            txtN1.setText("");
+            txtN2.setText("");
+            txtN3.setText("");
+            txtN4.setText("");
+            txtN5.setText("");
+            txtN6.setText("");
+            txtN7.setText("");
+            txtN8.setText("");
+            txtN9.setText("");
+            txtN10.setText("");
+
+            }     
+        
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
